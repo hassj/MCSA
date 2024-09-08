@@ -36,10 +36,25 @@ Steps: computer configuration -> policies -> windows settings -> security settin
 
 > update policy using command `gpupdate /force `
 
-To checking delete file/folder event on windows using ID 5145 or 4660
+To checking delete file/folder event on windows using ID 5145 or 4660 in ``filter current log``
 
 ![checking rule delete file](https://github.com/hassj/MCSA/blob/main/image/10-Monitoring-file-enforce-delete-file-2.JPG)
 
 ![checking rule delete file](https://github.com/hassj/MCSA/blob/main/image/10-Monitoring-file-enforce-delete-file-3.JPG)
 
-## Chapter 10.3: 
+
+
+## Chapter 10.3: Limited software executation
+
+To limit software execute, it need add Device to OU which you want to add POLICY
+
+Group policy management editor -> computer configuration -> policies -> windows settings -> security setting -> application control policies -> applocker
+
+![Limit installation software](https://github.com/hassj/MCSA/blob/main/image/10-limit-install-software.JPG)
+
+![Limit installation software](https://github.com/hassj/MCSA/blob/main/image/10-limit-install-software-2.JPG)
+
+Steps: at Create executable rule page -> deny/any publisher -> delete Builtin/Administrative rule
+
+group policy management -> computer configuration -> security setting -> system services -> application identity -> automatic
+
