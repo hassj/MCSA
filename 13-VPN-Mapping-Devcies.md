@@ -1,4 +1,4 @@
-# CHAPTER 13: VPN
+# CHAPTER 13: VPN and Maping Devcies
 
 ## Chapter 13.1: VPN PPTP
 
