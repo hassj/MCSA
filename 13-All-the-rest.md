@@ -94,9 +94,31 @@ Then restart RRAS and enable on interface WAN of Server VPN
 
 and enable Http on Network Address Translate Properties pane -> restart RRAS
 
-- on Client access to web adress of VPN to download CERT
+- on Client access to web adress of VPN server to download CERT ``http://vpn_server_IPAddress/certsrv`` ( maybe you need administrator account to download Certs)
 
 ![vpn-site-gateway lab 15](https://github.com/hassj/MCSA/blob/main/image/13-vpn-site-gateway-25.JPG)
 
+![vpn-site-gateway lab 15](https://github.com/hassj/MCSA/blob/main/image/13-vpn-site-gateway-26.JPG)
 
+Trust Root CA on Client, install it into computer account of local Computer
 
+![vpn-site-gateway lab 15](https://github.com/hassj/MCSA/blob/main/image/13-vpn-site-gateway-27.JPG)
+
+![vpn-site-gateway lab 15](https://github.com/hassj/MCSA/blob/main/image/13-vpn-site-gateway-28.JPG)
+
+![vpn-site-gateway lab 15](https://github.com/hassj/MCSA/blob/main/image/13-vpn-site-gateway-29.JPG)
+
+Then add local host of VPN IPADDRESS on Client, this point you can make a connection to VPN server
+
+![vpn-site-gateway lab 15](https://github.com/hassj/MCSA/blob/main/image/13-vpn-site-gateway-30.JPG)
+
+![vpn-site-gateway lab 15](https://github.com/hassj/MCSA/blob/main/image/13-vpn-site-gateway-31.JPG)
+
+In case cannot make connection successfully, it need create a registry record on client as bellow: Run -> Regedit -> HKEY-LOCAL-MACHINE -> SYSTEM -> CurrentControlSet -> Services -> SstpSvc -> Parameters , Keep creating a parameter 
+parameters -> New -> DWORD32 bit of value ``NoCertRevocationCheck``
+
+![vpn-site-gateway lab 15](https://github.com/hassj/MCSA/blob/main/image/13-vpn-site-gateway-32.JPG)
+
+Configure on Client connection VPN property 
+
+![vpn-site-gateway lab 15](https://github.com/hassj/MCSA/blob/main/image/13-vpn-site-gateway-33.JPG)
