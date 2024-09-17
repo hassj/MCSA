@@ -60,7 +60,7 @@ Then choose Manager -> IPSec -> Duplicate Template
 
 then choose ``SSTP `` on page Enable Certificate Templates
 
-Request Cert for server from CA Server (DC )
+On vpn server (which server will be used to install VPN Service) Request Cert for server from CA Server (DC)
 
 ![vpn-site-gateway lab 14](https://github.com/hassj/MCSA/blob/main/image/13-vpn-site-gateway-15.JPG)
 
