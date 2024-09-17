@@ -88,4 +88,3 @@ Finally, make a connection from client using Ms-Chapv2 authentication method.
 
 ![VPN-RAIDUS-NPS](https://github.com/hassj/MCSA/blob/main/image/14-VPN-Radius-NPS-13.JPG)
 
-	
